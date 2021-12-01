@@ -1,3 +1,28 @@
+html {
+  background-image: url(images/abstract-white-color-canvas-wallpaper-textures-surface.jpg);
+}
+
+.containare {
+  width: 320px;
+  position: relative;
+  margin: auto;
+}
+
+.header__foto {
+  width: 100%;
+  position: relative;
+  align-items: center;
+  height: auto;
+}
+
+.header {
+  display: flex;
+}
+
 h1 {
-  color: #c72b2b;
+  color: #ffceff;
+  font-family: "Estonia", cursive;
+  font-size: 220%;
+  position: absolute;
+  right: 5%;
 }/*# sourceMappingURL=style.css.map */

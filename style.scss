@@ -1,5 +1,36 @@
-$cervena: rgb(199, 43, 43);
+// vzorek barev
+$primary: rgb(47, 27, 53);
+$secondary: rgb(119, 114, 184);
+$tertiary: rgb(93, 67, 98);
+$background1: rgb(229, 219, 232);
+$background2: snow;
+$pink: rgb(255, 206, 255);
+
+html {
+  background-image: url(images/abstract-white-color-canvas-wallpaper-textures-surface.jpg);
+}
+
+.containare {
+  width: 320px;
+  position: relative;
+  margin: auto;
+}
+
+.header__foto {
+  width: 100%;
+  position: relative;
+  align-items: center;
+  height: auto;
+}
+
+.header {
+  display: flex;
+}
 
 h1 {
-    color: $cervena;
+  color: $pink;
+  font-family: "Estonia", cursive;
+  font-size: 220%;
+  position: absolute;
+  right: 5%;
 }
