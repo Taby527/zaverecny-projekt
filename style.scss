@@ -56,26 +56,27 @@ h1 {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   border: 3px solid $background2;
-  width: 80px;
-  height: 80px;
+  width: 30px;
+  height: 30px;
 }
 .menu-btn__burger {
-  width: 50px;
-  height: 6px;
+  width: 15px;
+  height: 3px;
   background: $background2;
   border-radius: 5px;
-  box-shadow: 0 2px 5px $secondary;
+  box-shadow: 0 1px $secondary;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger::before,
 .menu-btn__burger::after {
   content: " ";
   position: absolute;
-  width: 50px;
-  height: 6px;
+  margin-top: 8px;
+  width: 15px;
+  height: 3px;
   background: $background2;
   border-radius: 5px;
-  box-shadow: 0 2px $secondary;
+  box-shadow: 0 1px $secondary;
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger::before {
