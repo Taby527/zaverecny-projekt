@@ -28,9 +28,73 @@ html {
 }
 
 h1 {
+  margin: 10px 0 0;
   color: $pink;
   font-family: "Estonia", cursive;
-  font-size: 220%;
+  font-size: 270%;
   position: absolute;
   right: 5%;
+  top: 0;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  padding-right: 5%;
+  box-sizing: border-box;
+  background-color: $primary;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 50px;
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: 3px solid $background2;
+  width: 80px;
+  height: 80px;
+}
+.menu-btn__burger {
+  width: 50px;
+  height: 6px;
+  background: $background2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px $secondary;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: " ";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: $background2;
+  border-radius: 5px;
+  box-shadow: 0 2px $secondary;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn__burger::after {
+  transform: translateY(16px);
+}
+
+// animace
+
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
