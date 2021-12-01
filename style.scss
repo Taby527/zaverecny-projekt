@@ -71,7 +71,6 @@ h1 {
 .menu-btn__burger::after {
   content: " ";
   position: absolute;
-  margin-top: 8px;
   width: 15px;
   height: 3px;
   background: $background2;
@@ -80,10 +79,10 @@ h1 {
   transition: all 0.5s ease-in-out;
 }
 .menu-btn__burger::before {
-  transform: translateY(-16px);
+  transform: translateY(-8px);
 }
 .menu-btn__burger::after {
-  transform: translateY(16px);
+  transform: translateY(8px);
 }
 
 // animace
