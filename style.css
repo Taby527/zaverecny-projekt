@@ -44,10 +44,12 @@ h1 {
 .menu-btn {
   position: relative;
   display: flex;
+  padding: 0;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  background-color: transparent;
   border: 3px solid snow;
   width: 30px;
   height: 30px;
@@ -66,6 +68,7 @@ h1 {
 .menu-btn__burger::after {
   content: " ";
   position: absolute;
+  left: 4.5px;
   width: 15px;
   height: 3px;
   background: snow;
@@ -89,9 +92,19 @@ h1 {
 }
 
 .menu-btn.open .menu-btn__burger::before {
-  transform: rotate(45deg) translate(35px, -35px);
+  transform: rotate(45deg) translate(32px, -32px);
 }
 
 .menu-btn.open .menu-btn__burger::after {
-  transform: rotate(-45deg) translate(35px, 35px);
+  transform: rotate(-45deg) translate(32px, 32px);
+}
+
+.menu-btn__ul {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-btn__ul.show {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

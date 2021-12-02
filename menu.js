@@ -1,3 +1,4 @@
+// funkce křížek při klik na burger menu-----
 const menuBtn = document.querySelector(".menu-btn");
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
@@ -9,3 +10,5 @@ menuBtn.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+// -------------------------------------------
+
