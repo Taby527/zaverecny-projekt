@@ -1,7 +1,7 @@
 const menuHamburger = document.querySelector(".menu__hamburger");
 let menuOpen = false;
 menuHamburger.addEventListener("click", () => {
-  if (menuOpen) {
+  if (!menuOpen) {
     menuHamburger.classList.add("open");
     menuOpen = true;
   } else {
@@ -9,3 +9,5 @@ menuHamburger.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+
+

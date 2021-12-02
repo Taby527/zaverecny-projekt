@@ -128,4 +128,18 @@ a:focus {
 
 #nav-ul.show {
   display: block;
+}
+
+.menu__hamburger.open .menu__burger {
+  transform: translateX(-25px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu__hamburger.open .menu__burger::before {
+  transform: rotate(45deg) translate(22px, -22px);
+}
+
+.menu__hamburger.open .menu__burger::after {
+  transform: rotate(-45deg) translate(22px, 22px);
 }/*# sourceMappingURL=style.css.map */
