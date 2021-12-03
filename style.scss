@@ -7,6 +7,12 @@ $background2: snow;
 $pink: rgb(255, 206, 255);
 $footer: rgb(74, 55, 45);
 
+$text: 'Audiowide', cursive;
+$text-size: 10px;
+$shadow: inset 0 2px 4px  $secondary;
+$shadow2: 0 4px 4px $primary;
+
+
 html {
   background-image: url(images/abstract-white-color-canvas-wallpaper-textures-surface.jpg);
 }
@@ -15,6 +21,7 @@ html {
   width: 320px;
   position: relative;
   margin: auto;
+  font-family: $text;
 }
 //  hlavička-------------------------------------------------------------
 .header__foto {
@@ -75,6 +82,7 @@ h1 {
   display: block;
   text-align: center;
   margin-top: 4px;
+  box-shadow: $shadow;
 }
 
 .menu__links a:hover {
@@ -135,6 +143,7 @@ a:focus {
   transform: translateX(-25px);
   background: transparent;
   box-shadow: none;
+  border: none;
 }
 .menu__hamburger.open .menu__burger::before {
   transform: rotate(45deg) translate(22px, -22px);
@@ -153,3 +162,24 @@ a:focus {
 // }
 // ----------------------------------------------------------
 
+// section-----------------------------------------
+.section {
+  background-color: $background2;
+}
+.section__foto,
+.section__border {
+  width: 80%;
+  margin-top: 14px;
+  margin-left: 10%;
+}
+.section__foto{
+  box-shadow: $shadow2;
+}
+.section__text {
+  margin: 1.5em 0 0 0;
+  text-align: center;
+  font-family: $text;
+  font-size: $text-size;
+  box-shadow: $shadow2;
+  padding: 1em;
+}

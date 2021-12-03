@@ -6,6 +6,7 @@ html {
   width: 320px;
   position: relative;
   margin: auto;
+  font-family: "Audiowide", cursive;
 }
 
 .header__foto {
@@ -66,6 +67,7 @@ h1 {
   display: block;
   text-align: center;
   margin-top: 4px;
+  box-shadow: inset 0 2px 4px #7772b8;
 }
 
 .menu__links a:hover {
@@ -134,6 +136,7 @@ a:focus {
   transform: translateX(-25px);
   background: transparent;
   box-shadow: none;
+  border: none;
 }
 
 .menu__hamburger.open .menu__burger::before {
@@ -142,4 +145,28 @@ a:focus {
 
 .menu__hamburger.open .menu__burger::after {
   transform: rotate(-45deg) translate(22px, 22px);
+}
+
+.section {
+  background-color: snow;
+}
+
+.section__foto,
+.section__border {
+  width: 80%;
+  margin-top: 14px;
+  margin-left: 10%;
+}
+
+.section__foto {
+  box-shadow: 0 4px 4px #2f1b35;
+}
+
+.section__text {
+  margin: 1.5em 0 0 0;
+  text-align: center;
+  font-family: "Audiowide", cursive;
+  font-size: 10px;
+  box-shadow: 0 4px 4px #2f1b35;
+  padding: 1em;
 }/*# sourceMappingURL=style.css.map */
