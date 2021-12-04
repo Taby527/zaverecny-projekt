@@ -2,6 +2,7 @@
 $primary: rgb(47, 27, 53);
 $secondary: rgb(119, 114, 184);
 $tertiary: rgb(93, 67, 98);
+$background1: white;
 $background2: snow;
 $pink: rgb(255, 206, 255);
 $footer: rgb(74, 55, 45);
@@ -15,12 +16,14 @@ $shadow2: 0 4px 4px $primary;
 html {
   background-image: url(images/abstract-white-color-canvas-wallpaper-textures-surface.jpg);
 }
-
+p {
+  font-size: $text-size;
+  font-family: $text;
+}
 .containare {
   width: 320px;
   position: relative;
   margin: auto;
-  font-family: $text;
 }
 //  hlavička-------------------------------------------------------------
 .header__foto {
@@ -77,6 +80,7 @@ h1 {
 .footer__text {
   font-size: $text-size;
   text-align: center;
+  color: $background1;
 }
 
 // -------------------------------------------
@@ -90,6 +94,7 @@ h1 {
   color: $background2;
   text-decoration: none;
   font-size: $text-size2;
+  font-family: $text;
   display: block;
   text-align: center;
   margin-top: 4px;
@@ -180,11 +185,14 @@ a:active {
   margin-top: 14px;
   margin-left: 10%;
 }
+.section__border {
+  background-color: $background1;
+}
 .section__foto {
   box-shadow: $shadow2;
 }
 .section__text {
-  margin: 1.5em 0 0 0;
+  margin: 1em 0 0 0;
   text-align: center;
   font-family: $text;
   font-size: $text-size;
@@ -230,7 +238,7 @@ a:active {
     width: 8em;
     cursor: pointer;
   }
-  // responzivní nastavení pro velikost na 850px, sekce obrázek a text dát vedle sebe
+  // responzivní nastavení pro velikost nad 850px, sekce obrázek a text dát vedle sebe
   @media screen and (min-width: 850px) {
     .containare {
       width: 800px;
@@ -259,20 +267,29 @@ a:active {
       font-size: $text-size2;
     }
     .section {
+      padding: 0;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      height: 500px;
     }
     .section__foto,
     .section__border {
+      margin: 0;
       justify-self: center;
       align-self: center;
+    }
+    .section__border {
+      display: grid;
+      grid-template-rows: repeat(3 auto);
+      gap: 1em;
     }
     .section__foto {
       margin: 0;
       object-fit: cover;
       height: 320px;
     }
-    .section__border {
+
+    .section__text {
       margin: 0;
     }
   }
@@ -288,5 +305,44 @@ a:active {
   .footer__logo {
     width: 39%;
   }
+  .section {
+    height: 400px;
+  }
+}
+
+// ------------------------------------------------------------------
+// --------------------------------------------------------------------
+// stylizace ceníku kosmetických služeb--------------------------
+.main {
+  background-color: $background2;
+}
+.main__grid {
+  width: 80%;
+  background-color: $background1;
+  margin: auto;
+  height: 300px;
+}
+.main__border {
+  display: grid;
+  grid-template-columns: 1fr 4em;
+  grid-auto-flow: row;
+  grid-template-areas: "h3 main__price";
+  box-shadow: $shadow2;
+  
+
+}
+.main__title,
+.main__price {
+  margin: 0;
+
   
 }
+.main__price {
+  justify-self: right;
+}
+.main__text {
+  margin: 0;
+  font-size: $text-size;
+  display: none;
+}
+
